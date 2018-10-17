@@ -117,7 +117,7 @@ struct Console {
         }
     }
 
-    String sendMain()
+    void sendMain()
     {
         sendMessage(String(getName() + " v" + getVersion() + "." + getBuild()));
         sendMessage(String("Debug Mode " + isActive(debug)));
